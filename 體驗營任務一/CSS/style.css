@@ -1,0 +1,234 @@
+/* 初始 CSS 設定 */
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* Box Model */
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* Ｎav CSS start */
+.logo,
+.logo img {
+    /* Display */
+    display: block;
+    /* Box Model */
+    height: 40px;
+}
+
+nav {
+    /* Display */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.menu {
+    /* Display */
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    /* Box Model */
+    padding: 10px 30px 8px 30px;
+    /* Font or other */
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #EAF0ED;
+}
+
+.menu .cart-logo {
+    /* Box Model */
+    padding-left: 49px;
+    padding-right: 0px;
+}
+
+.banner {
+    /* Box Model */
+    margin-bottom: 60px;
+}
+
+/* Ｎav CSS end */
+
+/* Main CSS start */
+main {
+    /* Display */
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodocut-type {
+    /* Font or other */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prodocut-type h2 {
+    /* Box Model */
+    padding: 16px 64px;
+    /* Font or other */
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+.prodocut-type a {
+    /* Display */
+    display: block;
+    /* Box Model */
+    padding: 16px 64px;
+    border: 1px solid #EAF0ED;
+    margin-top: -1px;
+    /* Font or other */
+    color: #3F5D45;
+}
+
+.prodocut-type a:hover {
+    /* Font or other */
+    background-color: #EAF0ED;
+}
+
+/* 產品卡片列 */
+/* 1. .prodocut-list 的排列 */
+/* 2. <p>.<i> 與 .card-img 的定位設置 */
+/* 3. .card-body 的排列 */
+/* 4. .card-footer a 和 .card-img img 的 display */
+/* 5. 盒模型設置 */
+/* 6. 文字顏色、大小、粗細等細節設置 */
+/* 7. hover 相關設置 */
+
+.prodocut-list {
+    /* Display */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Box Model */
+    width: 620px;
+    /* Font or other */
+    font-size: 20px;
+    color: #3F5D45;
+}
+
+.prodoct-card {
+    /* Box Model */
+    padding-bottom: 20px;
+}
+
+.card-img {
+    /* Positioning */
+    position: relative;
+}
+
+.card-img p {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 20px;
+    /* Box Model */
+    padding: 10.08px 10px 9.24px 10px;
+    /* Font or other */
+    background-color: #3F5D45;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    color: #EAF0ED;
+    letter-spacing: 4px;
+}
+
+.card-img i {
+    /* Positioning */
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.card-body {
+    /* Display */
+    display: flex;
+    /* Box Model */
+    width: 300px;
+    /* Font or other */
+    border-right: 1px solid #EAF0ED;
+}
+
+.card-body h3 {
+    /* Box Model */
+    padding: 14px 33px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.card-body p {
+    /* Box Model */
+    padding: 14px 20px 14px 25px;
+}
+
+.card-footer a,
+.card-img img {
+    /* Display */
+    display: block;
+}
+
+.card-footer a {
+    /* Box Model */
+    padding: 16px 90px;
+    /* Font or other */
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-footer a:hover {
+    /* Font or other */
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+/* Main CSS end */
+
+/* Ｎavigation CSS start */
+.navigation {
+    /* Display */
+    display: flex;
+    justify-content: flex-end;
+    /* Box Model */
+    padding: 10px 0 60px 0;
+}
+
+.navigation a {
+    /* Display */
+    display: block;
+    /* Box Model */
+    padding: 16px 26px;
+    border: 1px solid #EAF0ED;
+    margin-left: -1px;
+    /* Font or other */
+    color: #3F5D45;
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    /* Font or other */
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+/* Ｎavigation CSS end */
